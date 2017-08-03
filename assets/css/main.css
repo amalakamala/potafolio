@@ -1,0 +1,18 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+nav {
+    color: #7F7F7F;
+    background-color: transparent;
+}
+.brand-logo img{
+    margin-left: 100px;
+    padding: 8px;	
+    width: 60px;
+}
+
+ul li a{
+	color: black;
+}
