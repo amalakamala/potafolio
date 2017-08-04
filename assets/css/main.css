@@ -202,6 +202,65 @@
     border-left: 640px solid transparent; 
     border-bottom: 100px solid #FFF;   
 }
+.caja-portafolio{
+    position: relative;
+}
+.hide{
+    transition: all 0.5s ease;
+}
+.caja-portafolio .mostrar{    
+    background-color: rgba(255,255,255,0.95);
+    margin-left:10px;
+    left: 0;
+    top: 0;
+    width: 299px;
+    height: 298px;
+    position: absolute;
+}
+.caja-portafolio .mostrar h4{
+    color: #312E3C;
+    margin-top: 100px;
+    font-weight: 200;
+}
+.icon-portafolio i{
+    color:#312E3C;
+    font-size: 25px;
+    margin-right:5px;
+    margin-bottom: 20px;
+}
+.icon-por-materialz{
+    position: relative;
+    bottom: 9px;
+}
+.botonera-por-materialz{
+    position: relative;
+    bottom: 9px;
+}
+.material-portafolio{
+    background-image: url('../img/material-p.png');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    margin-right: 5px;
+}
+
+.botonera-portafolio{
+    margin-top: 20px;
+    margin-left:15px;
+}
+
+.botonera-portafolio .btn{
+    background-color:#F7F7F7;
+    color: #312E3C;
+}
+.botonera-portafolio .btn:hover{
+    background-color:#DAC0AC;
+    color: #FFF;
+}
+
 /*------ CONTACTO ------*/ 
 .contacto{
     padding: 30px 0 50px;    
@@ -211,4 +270,13 @@
     color: #DAC0AC;
     font-weight: 400;
     letter-spacing: 5px;    
+}
+/*------ FOOTER ------*/ 
+footer{
+    background-color: #1A1821;
+    color: #DAC0AC;
+    padding: 10px;
+}
+.text-footer{
+    margin: 0;
 }
