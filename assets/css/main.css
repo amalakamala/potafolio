@@ -1,18 +1,214 @@
 *{
 	margin:0;
 	padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
-
-nav {
+/*------ NAV ------*/
+.el-navegador {
     color: #7F7F7F;
-    background-color: transparent;
+    background-color: rgba(49, 46, 60, 0.3);
+    z-index: 1;
+    box-shadow:none;
 }
-.brand-logo img{
-    margin-left: 100px;
-    padding: 8px;	
-    width: 60px;
+.el-navegador .brand-logo{
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;    
+    margin-top: 8px;
+}
+.nav-wrapper ul{
+	padding-right: 100px;
+}
+.nav-wrapper ul a:hover {
+    color: #FFF;
+    background-color: rgba(49, 46, 60, 0.3);
 }
 
-ul li a{
-	color: black;
+.el-menu{
+    background-color: #FFF;
+    z-index: 1;
+}
+.el-navegador ul{
+    padding-right: 100px;
+}
+
+.el-menu ul a{
+    color: #7F7F7F;
+}
+.el-menu .brand-logo{
+    background-image: url('../img/logo-c.png');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;    
+    margin-top: 8px;
+}
+.el-menu .nav-wrapper ul a:hover {
+    color: #FFF;
+    background-color: rgba(218, 192, 172, 0.7);
+}
+
+/*------ CAROUSEL ------*/
+.el-carousel{
+    position: relative;  
+}
+.carousel.carousel-slider {
+    top: -80px;
+    left: 0;
+    z-index: -1;
+    height: 600px;
+}
+.c-item-1{
+	background-image: url('../img/slider-1.png');
+	background-size: cover;
+}
+.c-item-2{
+    background-image: url('../img/slider-1.png');
+  
+}
+.carousel.carousel-slider .carousel-item h2{
+	margin-top: 300px;
+	font-size: 40px;
+}
+.triangulo-equilatero-bottom-left{
+    position: absolute;
+    bottom: 80px;
+    width: 200px;
+    height: 300px;
+    border-right: 640px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #FFF;
+    z-index: -1;    
+}
+.triangulo-equilatero-bottom-right{
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    height: 0; 
+    width: 0; 
+    border-top: 100px solid transparent; 
+    border-left: 640px solid transparent; 
+    border-bottom: 100px solid #FFF;   
+    z-index: -1; 
+}
+/*------ SOBRE MI ------*/
+.aboutme{
+    position: relative;
+    top:-50px;
+    padding-bottom: 50px;
+}
+
+.img-me{		
+    border-radius: 50%;
+	width: 300px;
+	box-shadow: rgba(0,0,0,0.1);
+}
+.caja h3{
+    color: #DAC0AC;
+    font-weight: 200;
+    letter-spacing: 5px;    
+}
+.caja h6{
+    font-size: 18px;
+    color: #312E3C;
+    margin-bottom:20px;
+}
+.caja p{
+    text-align: justify;
+    font-size: 13.5px;
+}
+
+/*------ TOOLS ------*/ 
+.tools{
+    padding: 30px 0 100px;
+    position: relative;
+    background-color: #F7F7F7;
+}
+.tools h3{
+    color: #DAC0AC;
+    font-weight: 400;
+    letter-spacing: 5px; 
+}
+.triangulo-equilatero-bottom-left-dos{
+    position: absolute;
+    top: -200px;
+    width: 0;
+    height: 0;
+    border-right: 640px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #F7F7F7;    
+}
+.triangulo-equilatero-bottom-right-dos{
+    position: absolute;
+    top: -200px;    
+    right: 0;
+    height: 0; 
+    width: 0; 
+    border-top: 100px solid transparent; 
+    border-left: 640px solid transparent; 
+    border-bottom: 100px solid #F7F7F7; 
+} 
+.icon-tools{
+    font-size: 40px;
+    color: #7F7F7F;
+}
+.f-iconos{
+    margin-bottom: 40px;
+}
+.material-icon{
+    background-image: url('../img/materialz.png');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 43px; 
+    margin-left: 60px;
+    margin-bottom: 0;     
+}
+.f-iconos h6{
+    color: #312E3C;    
+    font-size: 14px;
+}
+.f-iconos p{
+    font-size: 12px;
+    color: #7F7F7F;
+}
+/*------ PORTAFOLIO ------*/ 
+.portafolio{
+    padding: 30px 0 50px;    
+    position: relative;
+}
+.portafolio h3{
+    color: #DAC0AC;
+    font-weight: 200;
+    letter-spacing: 5px;    
+}
+.triangulo-equilatero-bottom-left-tres{
+    position: absolute;
+    top: -200px;
+    width: 0;
+    height: 0;
+    border-right: 640px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #FFF;   
+}
+.triangulo-equilatero-bottom-right-tres{
+    position: absolute;
+    right: 0;
+    top:-200px;
+    height: 0; 
+    width: 0; 
+    border-top: 100px solid transparent; 
+    border-left: 640px solid transparent; 
+    border-bottom: 100px solid #FFF;   
+}
+/*------ CONTACTO ------*/ 
+.contacto{
+    padding: 30px 0 50px;    
+    background-color: #312E3C;
+}
+.contacto h3{
+    color: #DAC0AC;
+    font-weight: 400;
+    letter-spacing: 5px;    
 }

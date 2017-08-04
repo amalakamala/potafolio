@@ -8,7 +8,7 @@
     <!--favicon-->
 	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>    
 	<!-- googel fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet">
 	<!-- Font awesome -->
 	<script src="https://use.fontawesome.com/4154d90246.js"></script>
 	<!-- devicon -->
@@ -23,61 +23,169 @@
 <body>
 	<!-- Header -->
 	<header>
-		<nav>		
-			<div class="nav-wrapper">
-				<a href="#!" class="brand-logo"><img class="responsive-img" src="assets/img/logo.png" alt=""></a>
-				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul class="right hide-on-med-and-down">
-			        <li><a href="sass.html">SOBRE MI</a></li>
-			        <li><a href="badges.html">HERRAMIENTAS</a></li>
-			        <li><a href="collapsible.html">PROYECTOS</a></li>
-			        <li><a href="mobile.html">CONTACTO</a></li>
-      			</ul>
-      			<ul class="side-nav" id="mobile-demo">
-			        <li><a href="sass.html">SOBRE MI</a></li>
-			        <li><a href="badges.html">HERRAMIENTAS</a></li>
-			        <li><a href="collapsible.html">PROYECTOS</a></li>
-			        <li><a href="mobile.html">CONTACTO</a></li>
-      			</ul>
-    		</div>
-  		</nav>					
+		<div class="navbar-fixed">
+			<nav id="navegador" class="el-navegador">
+	      		<div class="nav-wrapper">
+					<a href="#!" class="brand-logo"></a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+				        <li><a href="#about-me-id">SOBRE MI</a></li>
+				        <li><a href="badges.html">HERRAMIENTAS</a></li>
+				        <li><a href="collapsible.html">PROYECTOS</a></li>
+				        <li><a href="mobile.html">CONTACTO</a></li>
+	      			</ul>
+	      		</div>
+	    	</nav>
+	  	</div>
+	  	<ul class="side-nav" id="mobile-demo">
+			<li><a href="#aboutme">SOBRE MI</a></li>
+			<li><a href="badges.html">HERRAMIENTAS</a></li>
+			<li><a href="collapsible.html">PROYECTOS</a></li>
+			<li><a href="mobile.html">CONTACTO</a></li>
+	    </ul>
 	</header>
 	<!-- Carousel -->
-	<section>
+	<section class="el-carousel">
 		<div class="carousel carousel-slider center" data-indicators="true">
-		    <div class="carousel-item red white-text" href="#one!">
-		    	<h2>First Panel</h2>
-		    	<p class="white-text">This is your first panel</p>
+		    <div class="carousel-item c-item-1 white-text" href="#one!">
 		    </div>
-		    <div class="carousel-item amber white-text" href="#two!">
-				<h2>Second Panel</h2>
-				<p class="white-text">This is your second panel</p>
-		    </div>
-		    <div class="carousel-item green white-text" href="#three!">
-		    	<h2>Third Panel</h2>
-		    	<p class="white-text">This is your third panel</p>
-		    </div>
-		    <div class="carousel-item blue white-text" href="#four!">
-		    	<h2>Fourth Panel</h2>
-		    	<p class="white-text">This is your fourth panel</p>
+		    <div class="carousel-item c-item-2 white-text" href="#two!">
 		    </div>
   		</div>
+		<div class="triangulo-equilatero-bottom-left"></div> 
+		<div class="triangulo-equilatero-bottom-right"></div>  		
 	</section>
 	<!-- Section SobreMi -->
-	<section class="aboutme scrollspy">
-		<div class="row">
-			<div class="col m4 offset-m2" style="perspective: 1000px;">
-				<img class="responsive-img" src="assets/img/me.png" alt="">
+	<section id="about-me-id" class="aboutme">
+		<div class="row caja">
+			<div class="col m4 offset-m2 xs12">
+				<img class="responsive-img img-me z-depth-3 mov" src="assets/img/me.png" alt="">			
 			</div>	
-			<div class="col m4">
-				<p>Soy Amala Kamala, soy una coder a la que le gusta aprender cosas nuevas, autodidacta y organizada, partidaria del trabajo en equipo. Estudié Diseño en Comunicación Visual, profesión que me desempeñe de forma freelancer en proyectos principalmente de creación de páginas web lo que me llevó finalmente a interesarme en el área de la tecnología y el código, mundo en el cual quiero iniciar una carrera. Fanática de las series, el bordado, tejer, actividades manuales y por supuesto tecnología.</p>
+			<div class="col m4 mov">
+				<h3>ABOUT ME</h3>
+				<h6 class="a-me-c">Soy <b><i>Amala Kamala</i></b>, una coder a la que le gusta aprender cosas nuevas, autodidacta y organizada, partidaria del trabajo en equipo.</h6>
+				<p>Estudié Diseño en Comunicación Visual, profesión que me desempeñe de forma freelancer en proyectos principalmente de creación de páginas web lo que me llevó finalmente a interesarme en el <i>área de la tecnología y el código</i>, mundo en el cual quiero iniciar una carrera. Fanática de las series, el bordado, tejer, actividades manuales y por supuesto tecnología.</p>
 			</div>	
 		</div>
 	</section>
 	<!-- Herramientas -->	
 	<section class="tools">
-		<div>
-			
+		<div class="triangulo-equilatero-bottom-left-dos"></div> 
+		<div class="triangulo-equilatero-bottom-right-dos"></div>
+		<div class="row center mov">
+			<div class="col m6 offset-m3">
+				<h3>HERRAMIENTAS</h3>
+			</div>											
+		</div>
+		<div class="row center f-iconos mov">
+			<div class="col m2">
+				<i class="devicon-html5-plain icon-tools html5"></i>
+				<h6>HTML5</h6>
+				<p>HyperText Markup Language, versión 5</p>
+			</div>
+			<div class="col m2">
+				<i class="devicon-css3-plain icon-tools css3"></i>
+				<h6>CSS3</h6>
+				<p>Cascading Style Sheets</p>
+			</div>	
+			<div class="col m2">
+				<i class="devicon-javascript-plain icon-tools js"></i>
+				<h6>JAVASCRIPT</h6>
+				<p>High-level programming language</p>
+			</div>	
+			<div class="col m2">
+				<i class="devicon-jquery-plain icon-tools jquery"></i>
+				<h6>JQUERY</h6>
+				<p>Cross-platform JavaScript library designed to simplify the client-side scripting of HTML</p>
+			</div>				
+			<div class="col m2">
+				<i class="devicon-wordpress-plain icon-tools wordpress"></i>
+				<h6>WORDPRESS</h6>
+				<p>Content Management System</p>
+			</div>				
+			<div class="col m2">
+				<i class="devicon-sass-original icon-tools sass"></i>
+				<h6>SASS</h6>
+				<p>syntactically awesome stylesheets</p>
+			</div>												
+		</div>	
+		<div class="row center f-iconos mov">
+			<div class="col m2">
+				<i class="devicon-bootstrap-plain icon-tools boots"></i>
+				<h6>BOOTSTRAP</h6>
+				<p>Web framework for designing websites</p>
+			</div>	
+			<div class="col m2">
+				<div class="material-icon"></div>
+				<h6>MATERIALIZE</h6>
+				<p>Web framework for designing websites</p>
+			</div>			
+			<div class="col m2">
+				<i class="devicon-github-plain icon-tools github"></i>
+				<h6>GITHUB</h6>
+				<p>web-based Git or version control repository and Internet hosting service.</p>
+			</div>
+			<div class="col m2">
+				<i class="devicon-slack-plain icon-tools slack"></i>
+				<h6>SLACK</h6>
+				<p>Cloud-based set of team collaboration tools and services</p>
+			</div>	
+			<div class="col m2">
+				<i class="devicon-illustrator-plain icon-tools illust"></i>
+				<h6>ILLUSTRATOR</h6>
+				<p>Vector graphics editor</p>
+			</div>				
+			<div class="col m2">
+				<i class="devicon-photoshop-plain icon-tools photo"></i>
+				<h6>PHOTOSHOP</h6>
+				<p>Raster graphics editor</p>
+			</div>												
+		</div>			
+	</section>
+	<!-- PORTAFOLIO -->	
+	<section class="portafolio">
+		<div class="triangulo-equilatero-bottom-left-tres"></div> 
+		<div class="triangulo-equilatero-bottom-right-tres"></div>	
+		<div class="row center mov">
+			<div class="col m6 offset-m3">
+				<h3>PORTAFOLIO</h3>
+			</div>											
+		</div>
+		<div class="row center mov">
+			<div class="col m3 ">
+				<img class="responsive-img" src="assets/img/portafolio-1.png" alt="">
+			</div>		
+			<div class="col m3 ">
+				<img class="responsive-img" src="assets/img/portafolio-2.png" alt="">
+			</div>	
+			<div class="col m3 ">
+				<img class="responsive-img" src="assets/img/portafolio-3.png" alt="">
+			</div>	
+			<div class="col m3 ">
+				<img class="responsive-img" src="assets/img/portafolio-5.png" alt="">
+			</div>																	
+		</div>
+		<div class="row center mov">
+			<div class="col m3 ">
+				<img class="responsive-img" src="assets/img/portafolio-7.png" alt="">
+			</div>		
+			<div class="col m3 ">
+				<img class="responsive-img" src="assets/img/portafolio-8.png" alt="">
+			</div>	
+			<div class="col m3 ">
+				<img class="responsive-img" src="assets/img/portafolio-6.png" alt="">
+			</div>	
+			<div class="col m3 ">
+				<img class="responsive-img" src="assets/img/portafolio-4.png" alt="">
+			</div>																	
+		</div>		
+	</section>
+	<!-- PORTAFOLIO -->	
+	<section class="contacto">
+		<div class="row center mov">
+			<div class="col m6 offset-m3">
+				<h3>CONTACTO</h3>
+			</div>											
 		</div>
 	</section>
 
@@ -85,7 +193,9 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<!-- Materialize -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-	<!-- JS -->  	
+	<!-- JS -->  
+	<script src="assets/js/libreria/smoove.js"></script>
+	<script src="assets/js/nav.js"></script>	
 	<script src="assets/js/main.js"></script>	
 </body>
 </html>

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+
 	$('.carousel.carousel-slider').carousel({fullWidth: true});
 
 	$('.carousel').carousel();
@@ -12,9 +14,7 @@ $(document).ready(function() {
     	closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
     	draggable: true, // Choose whether you can drag to open on touch screens,
     });
-
-    //scroll spy
-    $('.scrollspy').scrollSpy();
+ 
     //smoove transition
-    $('.smoo').smoove({opacity:'0', moveY: '90px',});
+    $('.mov').smoove({opacity:'0', moveY: '20px',});
 });
