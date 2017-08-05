@@ -16,12 +16,11 @@ $(document).ready(function() {
     });
  
     //smoove transition
-    $('.mov').smoove({opacity:'0', moveY: '20px',});
-
+    $('.mov').smoove({opacity:'0', moveY: '50px',});
 
 	$("#port-id-img-1").hover(function(){
-		$("#port-1").removeClass('hide',1000);}, 
-		function(){$("#port-1").addClass('hide',1000);}
+		$("#port-1").removeClass('hide',3000);}, 
+		function(){$("#port-1").addClass('hide',3000);}
 	);
 	$("#port-id-img-2").hover(function(){
 	    $("#port-2").removeClass('hide',1000);}, 
@@ -50,5 +49,6 @@ $(document).ready(function() {
 	$("#port-id-img-8").hover(function(){
 	    $("#port-8").removeClass('hide')}, 
 	    function(){$("#port-8").addClass('hide');}
-	);			
+	);	
+		
 });

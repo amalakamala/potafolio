@@ -97,6 +97,7 @@
 .aboutme{
     position: relative;
     top:-50px;
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 
@@ -205,17 +206,14 @@
 .caja-portafolio{
     position: relative;
 }
-.hide{
-    transition: all 0.5s ease;
-}
-.caja-portafolio .mostrar{    
-    background-color: rgba(255,255,255,0.95);
+.mostrar{   
+    position: absolute; 
     margin-left:10px;
     left: 0;
     top: 0;
     width: 299px;
     height: 298px;
-    position: absolute;
+    background-color: rgba(255,255,255,0.95);    
 }
 .caja-portafolio .mostrar h4{
     color: #312E3C;
@@ -269,7 +267,24 @@
 .contacto h3{
     color: #DAC0AC;
     font-weight: 400;
-    letter-spacing: 5px;    
+    letter-spacing: 5px;   
+    margin-bottom: 50px; 
+}
+.iconos-contacto a{
+    color: #DAC0AC;
+    font-size: 25px;
+    margin: 40px;
+}
+.iconos-contacto a:hover{
+    color: #F7F7F7;
+}
+.iconos-contacto a i{
+    background-color: #F7F7F7;
+    padding: 15px;
+    border-radius: 50%;
+}
+.iconos-contacto a i:hover{
+    background-color: #1A1821;
 }
 /*------ FOOTER ------*/ 
 footer{
